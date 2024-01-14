@@ -7,10 +7,11 @@ const loginRoutes = require('./router/login.routes');
 const linkRouter = require('./router/link.routes');
 const categoriesRouter = require('./router/categoriesLink.routes');
 const namesCategoriesRouter = require('./router/nameCategories.routes');
-// require("dotenv").config();
+require("dotenv").config();
 
-// const passwordDB = process.env.DBPASSWORD;
-// const port = process.env.PORT;
+const passwordDB = process.env.DBPASSWORD;
+const userDB = process.env.DBUSER;
+const port = process.env.PORT;
 
 const app = express();
 app.use(cors());
@@ -24,7 +25,7 @@ app.use('/', categoriesRouter);
 app.use('/', namesCategoriesRouter);
 
 mongoose
-  .connect(`mongodb+srv://wlissesfernando108:amostra@cluster2.1phtzjr.mongodb.net/`)
+  .connect(`mongodb+srv://${userDB}:${passwordDB}@cluster2.1phtzjr.mongodb.net/`)
   .then(() => {
     console.log('connection start success!');
     app.listen(3001);
