@@ -28,7 +28,7 @@ mongoose
   .connect(`mongodb+srv://${userDB}:${passwordDB}@cluster2.1phtzjr.mongodb.net/`)
   .then(() => {
     console.log('connection start success!');
-    app.listen(3001);
+    app.listen(port);
   })
   .catch((error) => console.log(error));
 
