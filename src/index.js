@@ -24,7 +24,7 @@ app.use('/', categoriesRouter);
 app.use('/', namesCategoriesRouter);
 
 mongoose
-  .connect(`mongodb+srv://wlissesfernando285:${passwordDB}@cluster0.vokq4pn.mongodb.net/`)
+  .connect(`mongodb+srv://wlissesfernando108:${passwordDB}@cluster2.1phtzjr.mongodb.net/`)
   .then(() => {
     console.log('connection start success!');
     app.listen(port);
