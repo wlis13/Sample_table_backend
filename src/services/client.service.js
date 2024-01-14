@@ -1,7 +1,7 @@
 const registerClients = require('../model/clients.model');
 
 async function allClientService() {
-  const products = await registerClients.find().exec();
+  const products = await registerClients.find();
   return products;
 };
 
