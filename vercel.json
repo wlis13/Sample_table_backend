@@ -21,7 +21,7 @@
       "src": "/(.*)",
       "dest": "src/index.js",
       "headers": {
-        "Access-Control-Allow-Origin": "https://front-end-table-lalef.vercel.app/",
+        "Access-Control-Allow-Origin": "https://sample-table-frontend.vercel.app/",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
       }
